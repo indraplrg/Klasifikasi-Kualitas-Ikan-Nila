@@ -38,7 +38,7 @@ The model was trained using the first dataset and evaluated on the second datase
 
 # Repository Structure
 
-```text
+```
 .
 ├── Training.ipynb
 ├── evaluasi.ipynb
@@ -57,6 +57,7 @@ The model was trained using the first dataset and evaluated on the second datase
 │   ├── AdamW
 │   └── SGD
 └── README.md
+
 ```
 
 # Data Preprocessing
