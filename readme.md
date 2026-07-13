@@ -38,6 +38,7 @@ The model was trained using the first dataset and evaluated on the second datase
 
 # Repository Structure
 
+```
 .
 ├── Training.ipynb
 ├── evaluasi.ipynb
@@ -57,6 +58,7 @@ The model was trained using the first dataset and evaluated on the second datase
 │   └── SGD
 └── README.md
 
+```
 # Data Preprocessing
 
 The following preprocessing techniques were applied before model training:
