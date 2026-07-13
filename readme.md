@@ -1,11 +1,8 @@
-````markdown
 # Fish Quality Classification using MobileNetV4 with ECA-Net
 
 Classification of Tilapia Fish Quality Based on Gill and Eye Images Using **MobileNetV4 Small** with **Efficient Channel Attention (ECA-Net)**.
 
 This repository contains the implementation of my undergraduate thesis.
-
----
 
 # Overview
 
@@ -25,8 +22,6 @@ using three optimization algorithms:
 - AdamW
 - SGD
 
----
-
 # Dataset
 
 A total of **3,440 images** were used in this study.
@@ -40,8 +35,6 @@ https://universe.roboflow.com/thesis-vbq8h/tilapia-gills-eyes-dataset-osayx
 https://universe.roboflow.com/sarahrambe/tilapiacondition-dataset
 
 The model was trained using the first dataset and evaluated on the second dataset (**cross-dataset evaluation**) to measure its generalization capability.
-
----
 
 # Repository Structure
 
@@ -66,8 +59,6 @@ The model was trained using the first dataset and evaluated on the second datase
 └── README.md
 ```
 
----
-
 # Data Preprocessing
 
 The following preprocessing techniques were applied before model training:
@@ -84,14 +75,10 @@ The following preprocessing techniques were applied before model training:
   - Gaussian Noise
   - Gamma Correction
 
----
-
 # Model Architecture
 
 - MobileNetV4 Small (Baseline)
 - MobileNetV4 Small + Efficient Channel Attention (ECA-Net)
-
----
 
 # Training Configuration
 
@@ -107,8 +94,6 @@ The following preprocessing techniques were applied before model training:
 | Pretrained     | False                      |
 | Optimizers     | Adam, AdamW, SGD           |
 
----
-
 # Training Results
 
 | Model    | Optimizer | Best Validation Accuracy | Best Validation Loss |
@@ -119,8 +104,6 @@ The following preprocessing techniques were applied before model training:
 | ECA-Net  | AdamW     |                   69.19% |               0.1030 |
 | Baseline | SGD       |                   87.79% |               0.1066 |
 | ECA-Net  | SGD       |               **88.37%** |           **0.0770** |
-
----
 
 # Training Curves
 
@@ -160,8 +143,6 @@ The following preprocessing techniques were applied before model training:
 <img src="Result/SGD/EcaNet/training_history_plot.png" width="750">
 </p>
 
----
-
 # Evaluation Results
 
 | Model    | Optimizer |   Accuracy |  Precision |      Recall |   F1-Score |
@@ -173,8 +154,6 @@ The following preprocessing techniques were applied before model training:
 | Baseline | SGD       | **80.23%** |     72.41% |      97.67% | **83.16%** |
 | ECA-Net  | SGD       |     78.49% |     70.25% |  **98.84%** |     82.13% |
 
----
-
 # Performance Comparison
 
 | Optimizer |   Baseline |    ECA-Net |
@@ -182,8 +161,6 @@ The following preprocessing techniques were applied before model training:
 | Adam      |     55.81% | **76.74%** |
 | AdamW     |     75.00% | **81.98%** |
 | SGD       | **80.23%** |     78.49% |
-
----
 
 # Best Model Result
 
@@ -213,8 +190,6 @@ The following preprocessing techniques were applied before model training:
 <img src="Result/AdamW/EcaNet/2/sample_predictions.png" width="700">
 </p>
 
----
-
 # Technologies
 
 - Python
@@ -225,8 +200,6 @@ The following preprocessing techniques were applied before model training:
 - NumPy
 - Matplotlib
 - Scikit-learn
-
----
 
 # Conclusion
 
@@ -241,8 +214,6 @@ The best-performing model achieved:
 | Recall    | **91.86%** |
 | F1-Score  | **83.60%** |
 
----
-
 # Author
 
 **Mohammad Asykarindra Puluraga**
@@ -250,4 +221,3 @@ The best-performing model achieved:
 - GitHub: https://github.com/indraplrg
 - GitLab: https://gitlab.com/indralolx
 - LinkedIn: https://linkedin.com/in/indra-puluraga
-````
